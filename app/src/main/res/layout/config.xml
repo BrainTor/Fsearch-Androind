@@ -1,0 +1,296 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF00"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ConfigActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/option"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#FF8C00"
+                android:gravity="center_horizontal"
+                android:text="@string/sms_config"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#F8F8FF" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/smsBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mmsBox"
+                    android:text="@string/sms" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText2"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/phone_number" />
+
+            </LinearLayout>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SMSC"
+                android:gravity="center_horizontal"
+                android:hint="@string/smsc" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF8C00"
+                android:gravity="center"
+                android:text="@string/SendOption"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#F8F8FF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/mmsBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:checked="false"
+                    android:text="@string/MMS" />
+
+                <EditText
+                    android:id="@+id/MMSnumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/phone_number" />
+
+                <EditText
+                    android:id="@+id/MMSC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/port"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/MMSC" />
+
+                <EditText
+                    android:id="@+id/proxy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/proxy" />
+
+                <EditText
+                    android:id="@+id/port"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/option"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/port" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/otherOption"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#FF8C00"
+                android:gravity="center_horizontal"
+                android:text="@string/Everybody_option"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#F8F8FF" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Camera"
+        android:id="@+id/cameraBox" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/cameraNumber"
+        android:id="@+id/cameraNumber" />
+
+</LinearLayout>
+            <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/savedAnalizedPhoto"
+            android:id="@+id/savedAnalizedPhotoBox" />
+            <CheckBox
+                android:id="@+id/flagBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/smsBox"
+                android:text="@string/goooglemap" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/droneId"
+                android:gravity="center_horizontal"
+                android:hint="@string/droneID" />
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/baseURL"
+                android:hint="@string/base_url" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#FF8C00"
+                android:gravity="center_horizontal"
+                android:text="@string/CV_config"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#F8F8FF" />
+
+            <EditText
+                android:id="@+id/photoDir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/photoDir"
+                />
+
+            <EditText
+                android:id="@+id/deviation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/deviation" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/tun_red"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FF0000"
+                    android:inputType="numberSigned"
+                    android:hint="@string/Correction" />
+
+                <EditText
+                    android:id="@+id/tun_green"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00FF00"
+                    android:inputType="numberSigned"
+                    android:hint="@string/Correction" />
+
+                <EditText
+                    android:id="@+id/tun_blue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000FF"
+                    android:inputType="numberSigned"
+                    android:hint="@string/Correction" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/fire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/dinamic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/smoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/stop"
+                    android:layout_height="wrap_content"
+                    android:onClick="stopService"
+                    android:id="@+id/stopService" />
+
+                <ImageButton
+                    android:id="@+id/save"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/save"
+                    android:layout_height="wrap_content"
+                    android:onClick="save" />
+
+                <ImageButton
+                    android:id="@+id/startService"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/start"
+                    android:layout_height="wrap_content"
+                    android:onClick="startService" />
+
+                <ImageButton
+                    android:id="@+id/goStatistic"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/log"
+                    android:layout_height="wrap_content"
+                    android:onClick="goStatistic" />
+
+                <ImageButton
+                    android:id="@+id/openDemoPhoto"
+                    android:layout_width="0dp"
+                    android:src="@drawable/iphoto"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:onClick="openDemoPhoto" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

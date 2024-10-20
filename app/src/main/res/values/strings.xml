@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Fsearch</string>
+    <string name="sms_config">Настройки СМС</string>
+    <string name="port">Порт</string>
+    <string name="MMSC">MMSC</string>
+    <string name="SendOption">Настройка ММС</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="proxy">Прокси</string>
+    <string name="Everybody_option">Общие настройки</string>
+    <string name="CV_config">Настройки ComputerVision</string>
+    <string name="config_saved">Настройки сохранены</string>
+    <string name="deviation">Отклонение</string>
+    <string name="photoDir">Директория для фото</string>
+    <string name="allOption">Все настройки</string>
+    <string name="Stop">Стоп</string>
+    <string name="Save">Сохранить</string>
+    <string name="Start">Старт</string>
+    <string name="Statistic">Статистика</string>
+    <string name="smsc">SMSC</string>
+    <string name="sms">СМС</string>
+    <string name="MMS">ММС</string>
+    <string name="droneID">Id дрона</string>
+    <string name="Correction">Корректировка</string>
+    <string name="base_url">Base URL</string>
+    <string name="goooglemap">Метка на GooogleMap</string>
+    <string name="cameraNumber">Номер камеры</string>
+    <string name="Camera">Камера</string>
+    <string name="openDemoPhoto">Демо фото</string>
+    <string name="savedAnalizedPhoto">Сохр. анализ</string>
+</resources>
